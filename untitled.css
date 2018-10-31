@@ -1,0 +1,19 @@
+.container {
+position: fixed;
+top: 0;
+left: 0;
+padding: 50px; }
+.container li {
+position: fixed; }
+.container .name {
+top: 0;
+left: 0; }
+.container .type {
+top: 0;
+right: 0; }*/
+.container .work {
+bottom: 0;
+left: 0; }
+.container .contact {
+bottom: 0;
+right: 0; }
