@@ -26,8 +26,8 @@
 
 	var relativeTime = function(){
 		currentTime = moment(new Date());
-		relativeTime = moment.tz("US/Pacific").format('hh:mm a');
-		$(".relative-time").html("It's " + relativeTime + " PST<br>in California");
+		relativeTime = moment.tz("US/Eastern").format('hh:mm a');
+		$(".relative-time").html("It's " + relativeTime + " PST<br>in New York City");
 	}
 	relativeTime();
 	window.setInterval(relativeTime, 10000);
