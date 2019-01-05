@@ -26,8 +26,8 @@
 
 	var relativeTime = function(){
 		currentTime = moment(new Date());
-		relativeTime = moment.tz("UTC").format('hh:mm a');
-		$(".relative-time").html("It's " + relativeTime + " UTC<br>in London, England.");
+		relativeTime = moment.tz("CET").format('hh:mm a');
+		$(".relative-time").html("It's " + relativeTime + " GMT+1<br>in Brussels, Belgium.");
 	}
 	relativeTime();
 	window.setInterval(relativeTime, 10000);
@@ -51,6 +51,12 @@
 	$(".december").click(function() {
 	    $('html,body').animate({
 	        scrollTop: $(".blog-december").offset().top-80},
+	        'slow');
+	});
+
+	$(".january").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $(".blog-january").offset().top-80},
 	        'slow');
 	});
 
