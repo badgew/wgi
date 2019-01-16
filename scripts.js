@@ -53,7 +53,7 @@
 
 var onMouseMove = function(){
       timer_screensaver=window.clearTimeout(timer_screensaver);
-      timer_screensaver=window.setTimeout(addNewItem, 2000);
+      timer_screensaver=window.setTimeout(addNewItem, 5000);
       moreItems=window.clearTimeout(moreItems);
       $('.suitcase-objects').html('');
 };
