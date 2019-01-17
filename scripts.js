@@ -45,9 +45,13 @@
       image.style.left=Math.random()*100 + '%';
       image.style.top=Math.random()*100 + '%';
       $('.suitcase-objects').append(image);
-      moreItems=window.setTimeout(addNewItem, 1000);
+      amountItems = amountItems+1;
+      if (amountItems < 100) { // If amount of items is less than 20 
+        moreItems=window.setTimeout(addNewItem, 1000);
+      }
     };
 
+    var amountItems = 0;
     var timer_screensaver; // the timer
     var moreItems;
 
@@ -56,6 +60,7 @@ var onMouseMove = function(){
       timer_screensaver=window.setTimeout(addNewItem, 5000);
       moreItems=window.clearTimeout(moreItems);
       $('.suitcase-objects').html('');
+      amountItems=0;
 };
     $(window).on('mousemove', onMouseMove);
     $(window).on('touchmove', onMouseMove);     
