@@ -22,7 +22,7 @@
 	var relativeTime = function(){
 		currentTime = moment();
 		relativeTime = moment.tz('CET').format('hh:mm a');
-		$(".relative-time").html("It's " + relativeTime + " GMT+1<br>in Brussels, Belgium.");
+		$(".relative-time").html("It's " + relativeTime + " GMT+1<br>in Graz, Austria.");
 	}
 	relativeTime();
 	//var timer_timezone = window.setInterval(relativeTime, 1000); 
@@ -31,7 +31,7 @@
 
     // screensaver
     var suitcasePath = "assets/";
-    var mySuitcase = ["asterisk1.png", "asterisk2.png", "asterisk3.png"];
+    var mySuitcase = ["beret.png", "floralscarf.png", "socks.png", "tuk.png", "boots.png", "differenttimes.png", "soda.png", "keys.png", "vans.png", "blazer.png", "bosspants.png", "gloves.png", "underwear.png", "earrings.png", "belt.png", "watch.png"];
     // add as many pngs as I want
 
 		var unpackSuitcase = function () {
@@ -47,7 +47,7 @@
       $('.suitcase-objects').append(image);
       amountItems = amountItems+1;
       if (amountItems < 100) { // If amount of items is less than 20 
-        moreItems=window.setTimeout(addNewItem, 1000);
+        moreItems=window.setTimeout(addNewItem, 5000);
       }
     };
 
@@ -57,7 +57,7 @@
 
 var onMouseMove = function(){
       timer_screensaver=window.clearTimeout(timer_screensaver);
-      timer_screensaver=window.setTimeout(addNewItem, 5000);
+      timer_screensaver=window.setTimeout(addNewItem, 10000);
       moreItems=window.clearTimeout(moreItems);
       $('.suitcase-objects').html('');
       amountItems=0;
@@ -89,6 +89,12 @@ var onMouseMove = function(){
 	        scrollTop: $(".blog-january").offset().top-80},
 	        'slow');
 	});
+
+    $(".february").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".blog-february").offset().top-80},
+          'slow');
+  });
     // end blog scroll
    });
 })(jQuery);

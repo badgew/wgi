@@ -38,7 +38,7 @@ body{
 }
 .suitcase-objects img{
 	position:absolute;
-	width:5%;
+	width:15%;
 }
 
 .row.expanded{
@@ -253,7 +253,7 @@ label, #content {
 	cursor:copy;
 }
 .february{
-	cursor:wait;
+	cursor:copy;
 }
 .march{
 	cursor:wait;
