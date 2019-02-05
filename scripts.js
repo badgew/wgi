@@ -46,7 +46,7 @@
       image.style.top=Math.random()*100 + '%';
       $('.suitcase-objects').append(image);
       amountItems = amountItems+1;
-      if (amountItems < 100) { // If amount of items is less than 20 
+      if (amountItems < 150) { // If amount of items is less than 20 
         moreItems=window.setTimeout(addNewItem, 5000);
       }
     };
