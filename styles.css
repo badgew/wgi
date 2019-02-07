@@ -377,8 +377,8 @@ label, #content {
 		display:block;
 	}
 
-	img.briefcase{
-		max-width:40px;
+	img{
+		max-width:100%;
 		padding-top:10px;
 		float:right;
 	}	
