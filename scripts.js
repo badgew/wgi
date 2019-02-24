@@ -23,6 +23,9 @@
 		currentTime = moment();
 		relativeTime = moment.tz('CET').format('hh:mm a');
 		$(".relative-time").html("It's " + relativeTime + " GMT+1<br>in Graz, Austria.");
+
+    // relativeTime = moment.tz('AEDT').format('hh:mm a');
+    // $(".relative-time").html("It's " + relativeTime + " AEDT<br>in Sydney, Australia.");
 	}
 	relativeTime();
 	//var timer_timezone = window.setInterval(relativeTime, 1000); 
