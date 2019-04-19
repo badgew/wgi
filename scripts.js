@@ -21,8 +21,8 @@
    	// timezones
 	var relativeTime = function(){
 		currentTime = moment();
-		relativeTime = moment.tz('CET').format('hh:mm a');
-		$(".relative-time").html("It's " + relativeTime + " GMT+1<br>in Graz, Austria.");
+		relativeTime = moment.tz('EST').format('hh:mm a');
+		$(".relative-time").html("It's " + relativeTime + " EST<br>in New York, NY.");
 
     // relativeTime = moment.tz('AEDT').format('hh:mm a');
     // $(".relative-time").html("It's " + relativeTime + " AEDT<br>in Sydney, Australia.");
@@ -96,6 +96,12 @@ var onMouseMove = function(){
     $(".february").click(function() {
       $('html,body').animate({
           scrollTop: $(".blog-february").offset().top-80},
+          'slow');
+  });
+
+        $(".march").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".blog-march").offset().top-80},
           'slow');
   });
     // end blog scroll

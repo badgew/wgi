@@ -101,6 +101,18 @@ a{
 	z-index:50;
 }
 
+.west{
+	cursor:w-resize;
+}
+
+.east{
+	cursor:e-resize;
+}
+
+.context:hover{
+	color:white;
+}
+
 .blog-plus{
 	position:fixed;
 	bottom:20px;
@@ -256,7 +268,11 @@ label, #content {
 	cursor:copy;
 }
 .march{
-	cursor:wait;
+	cursor:copy;
+}
+
+label:hover{
+	color:white;
 }
 
 /* Large and up scaling */
